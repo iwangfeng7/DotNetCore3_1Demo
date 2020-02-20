@@ -1,8 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using log4net.Repository.Hierarchy;
+using Autofac;
+using DotNetCore3_1Utility;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -25,7 +22,11 @@ namespace DotNetCore3_1Demo
         {
             services.AddControllersWithViews();
             services.AddSession();
-            services.AddLogging();
+        }
+
+        public void ConfigureContainer(ContainerBuilder containerBuilder)
+        {
+            containerBuilder.RegisterModule<CustomAutofacModule>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

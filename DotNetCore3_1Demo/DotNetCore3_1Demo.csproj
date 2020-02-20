@@ -5,9 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.1" />
     <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="3.0.3" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetCore3_1Interface\DotNetCore3_1Interface.csproj" />
+    <ProjectReference Include="..\DotNetCore3_1Service\DotNetCore3_1Service.csproj" />
+    <ProjectReference Include="..\DotNetCore3_1Utility\DotNetCore3_1Utility.csproj" />
   </ItemGroup>
 
 

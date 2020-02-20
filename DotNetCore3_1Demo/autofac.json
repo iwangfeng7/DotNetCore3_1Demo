@@ -1,0 +1,45 @@
+{
+	"defaultAssembly": "DotNetCore3_1Interface", // 抽象所在的程序集名称
+	"components": [ // 描述抽象和 实现的联系
+		{
+			"type": "DotNetCore3_1Service.TestServiceD,DotNetCore3_1Service", // 接口的实现类 全名称
+			"services": [
+				{
+					"type": "DotNetCore3_1Interface.ITestServiceD" // 接口（抽象）的全名称
+				}
+			],
+			"instanceScope": "single-instance", // 单例生命周期
+			"injectProperties": true // 是否支持属性注入
+		},
+		{
+			"type": "DotNetCore3_1Service.TestServiceD_One,DotNetCore3_1Service", // 接口的实现类 全名称
+			"services": [
+				{
+					"type": "DotNetCore3_1Interface.ITestServiceD" // 接口（抽象）的全名称
+				}
+			],
+			"instanceScope": "single-instance", // 单例生命周期
+			"injectProperties": true // 是否支持属性注入
+		},
+		{
+			"type": "DotNetCore3_1Service.TestServiceD_Two,DotNetCore3_1Service", // 接口的实现类 全名称
+			"services": [
+				{
+					"type": "DotNetCore3_1Interface.ITestServiceD" // 接口（抽象）的全名称
+				}
+			],
+			"instanceScope": "single-instance", // 单例生命周期
+			"injectProperties": true // 是否支持属性注入
+		},
+		{
+			"type": "DotNetCore3_1Service.TestServiceD_Three,DotNetCore3_1Service", // 接口的实现类 全名称
+			"services": [
+				{
+					"type": "DotNetCore3_1Interface.ITestServiceD" // 接口（抽象）的全名称
+				}
+			],
+			"instanceScope": "single-instance", // 单例生命周期
+			"injectProperties": true // 是否支持属性注入
+		}
+	]
+}
