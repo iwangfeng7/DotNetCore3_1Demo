@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -12,6 +8,7 @@ namespace DotNetCore3_1Demo.Controllers
     {
         private readonly ILogger<FirstController> _logger;
         private readonly ILoggerFactory _loggerFactory;
+
         public FirstController(ILogger<FirstController> logger,
             ILoggerFactory loggerFactory)
         {

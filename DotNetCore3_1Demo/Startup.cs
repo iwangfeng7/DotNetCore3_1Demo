@@ -17,18 +17,6 @@ namespace DotNetCore3_1Demo
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddControllersWithViews();
-            services.AddSession();
-        }
-
-        public void ConfigureContainer(ContainerBuilder containerBuilder)
-        {
-            containerBuilder.RegisterModule<CustomAutofacModule>();
-        }
-
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -52,6 +40,25 @@ namespace DotNetCore3_1Demo
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+        }
+
+        public void ConfigureContainer(ContainerBuilder containerBuilder)
+        {
+            containerBuilder.RegisterModule<CustomAutofacModule>();
+        }
+
+        // This method gets called by the runtime. Use this method to add services to the container.
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddControllersWithViews();
+            services.AddSession();
+            services.AddControllersWithViews(
+                options =>
+                {
+                    //È«¾Ö×¢²á
+                    options.Filters.Add<CustomExceptionFilterAttribute>();
+                    //options.Filters.Add<CustomGlobalFilterAttribute>();
+                });
         }
     }
 }
