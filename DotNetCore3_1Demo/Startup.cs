@@ -57,7 +57,7 @@ namespace DotNetCore3_1Demo
                 {
                     //È«¾Ö×¢²á
                     options.Filters.Add<CustomExceptionFilterAttribute>();
-                    //options.Filters.Add<CustomGlobalFilterAttribute>();
+                    options.Filters.Add<CustomGlobalFilterAttribute>();
                 });
         }
     }
