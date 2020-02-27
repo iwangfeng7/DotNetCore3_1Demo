@@ -12,13 +12,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore3_1Demo", "DotNet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore3_1Utility", "DotNetCore3_1Utility\DotNetCore3_1Utility.csproj", "{FB8F24B7-B334-479E-8374-07950957939C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore3_1Interface", "DotNetCore3_1Interface\DotNetCore3_1Interface.csproj", "{E39372C2-5043-44E2-B697-6C49C8D007F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore3_1Interface", "DotNetCore3_1Interface\DotNetCore3_1Interface.csproj", "{E39372C2-5043-44E2-B697-6C49C8D007F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore3_1Service", "DotNetCore3_1Service\DotNetCore3_1Service.csproj", "{8D152A97-38EC-4FF0-BA7A-0F7D1415F652}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore3_1Service", "DotNetCore3_1Service\DotNetCore3_1Service.csproj", "{8D152A97-38EC-4FF0-BA7A-0F7D1415F652}"
 	ProjectSection(ProjectDependencies) = postProject
 		{FB8F24B7-B334-479E-8374-07950957939C} = {FB8F24B7-B334-479E-8374-07950957939C}
 		{E39372C2-5043-44E2-B697-6C49C8D007F0} = {E39372C2-5043-44E2-B697-6C49C8D007F0}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore3_1ApiDemo", "DotNetCore3_1ApiDemo\DotNetCore3_1ApiDemo.csproj", "{3FF70913-6523-45F7-B84C-8A1F341BE1E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +44,10 @@ Global
 		{8D152A97-38EC-4FF0-BA7A-0F7D1415F652}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D152A97-38EC-4FF0-BA7A-0F7D1415F652}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D152A97-38EC-4FF0-BA7A-0F7D1415F652}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FF70913-6523-45F7-B84C-8A1F341BE1E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FF70913-6523-45F7-B84C-8A1F341BE1E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FF70913-6523-45F7-B84C-8A1F341BE1E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FF70913-6523-45F7-B84C-8A1F341BE1E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
