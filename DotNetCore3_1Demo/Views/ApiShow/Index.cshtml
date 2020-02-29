@@ -1,15 +1,21 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
-@model List<DotNetCore3_1Demo.Controllers.Person>
+@model List<DotNetCore3_1Demo.Controllers.ApiShow>
 
 <h1>Index</h1>
 <h1>
     @{
         foreach (var item in Model)
         {
-            <h1>姓名:@item.Name</h1>
-            <h1>年龄:@item.Age</h1>
+            <h1>调用方式:@item.Brief</h1>
+            <h1>URL:@item.Url</h1>
+            foreach (var person in item.Persons)
+            {
+                <h1>姓名:@person.Name</h1>
+                <h1>年龄:@person.Age</h1>
+            }
+            <br />
         }
     }
 </h1>

@@ -1,3 +1,4 @@
+using DotNetCore3_1Utility;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -33,6 +34,7 @@ namespace DotNetCore3_1ApiDemo
             {
                 endpoints.MapControllers();
             });
+            Configuration.ConsulRegist();
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
